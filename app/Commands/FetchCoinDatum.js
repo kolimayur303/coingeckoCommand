@@ -36,10 +36,12 @@ class FetchCoinsList extends Command {
         }
 
         const platformsData = {
-          ethereum: coin.platforms.ethereum || null,
-          fantom: coin.platforms.fantom || null,
-          xdai: coin.platforms.xdai || null,
-          aurora: coin.platforms.aurora || null,
+          ethereum: coin.platforms?.ethereum || null,
+          fantom: coin.platforms?.fantom || null,
+          xdai: coin.platforms?.xdai || null,
+          aurora: coin.platforms?.aurora || null,
+          binanceSmartChain: coin.platforms?.binance_smart_chain || null,
+          polygonPos:coin.platforms?.polygon_pos || null
       
         };
 
