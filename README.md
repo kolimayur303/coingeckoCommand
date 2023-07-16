@@ -1,7 +1,8 @@
 ## Setup
 
-manually clone the repo and then run `npm install`.
+github clone link : git clone https://github.com/kolimayur303/coingeckoCommand.git
 
+manually clone the repo and then run `npm install`.
 
 ### Migrations
 
