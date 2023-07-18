@@ -22,3 +22,8 @@ GET : http://127.0.0.1:3333/users
 
 ```
 "# coingeckoCommand" 
+
+
+adonis make:migration create_coins_table
+adonis migration:run
+adonis fetch:coins-list

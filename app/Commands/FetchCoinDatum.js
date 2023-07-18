@@ -22,16 +22,7 @@ class FetchCoinsList extends Command {
 
       for (const coin of response.data) {
 
-        const platformsData = {
-          ethereum: coin.platforms?.ethereum || null,
-          fantom: coin.platforms?.fantom || null,
-          xdai: coin.platforms?.xdai || null,
-          aurora: coin.platforms?.aurora || null,
-          binanceSmartChain: coin.platforms?.binance_smart_chain || null,
-          polygonPos:coin.platforms?.polygon_pos || null
-
-          // Add other platforms as needed or handle differently based on the actual data structure
-        }
+        const platformsData = coin.platforms;
 
         // Check if the record exists in the database
 
